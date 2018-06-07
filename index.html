@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+   <title>Calendar</title>
+  </head>
+  <body>
+    <div id="root">
+        hii
+    </div>
+    <div id="eventDesc" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div>
+            <input type="time" name="startTime">
+        </div>
+        <div>
+            <input type="time" name="endTime">
+        </div>
+        <div>
+            <input type="text" name="location">
+        </div>
+        <div>
+            <input type="text" name="owner">
+        </div>
+        <div>
+            <input type="text" name="title">
+        </div>
+        <div>
+             <input type="text" name="userList">
+        </div>
+      </div>
+
+    </div>
+    <button onClick="getPrevMonth()">Previous Month</button>
+    <button onClick="getNextMonth()">Next Month</button>
+    <button onClick="makeEvent()">Add event</button>
+   <script src="calendar.js"></script>
+  </body>
+</html>
